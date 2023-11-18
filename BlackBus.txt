@@ -1,0 +1,48 @@
+User Model:
+
+Represents information about registered users of the application.
+Fields: user_id, username, password, email, first_name, last_name, etc.
+Bus Model:
+
+Contains information about the buses available for booking.
+Fields: bus_id, bus_number, seating_capacity, driver_name, departure_city, arrival_city, etc.
+Route Model:
+
+Represents the routes that buses travel along.
+Fields: route_id, route_name, departure_city, arrival_city, distance, etc.
+Ticket Model:
+
+Stores information about individual bus ticket bookings.
+Fields: ticket_id, user_id, bus_id, departure_date, departure_time, seat_number, price, etc.
+Payment Model:
+
+Contains data related to payments for ticket bookings.
+Fields: payment_id, ticket_id, payment_date, amount, payment_status, payment_method, etc.
+Reservation Model:
+
+Represents seat reservations, which may or may not be associated with paid tickets.
+Fields: reservation_id, user_id, bus_id, departure_date, seat_number, reservation_status, etc.
+Feedback Model:
+
+Stores feedback and reviews provided by users.
+Fields: feedback_id, user_id, bus_id, rating, comment, feedback_date, etc.
+Driver Model:
+
+Contains information about bus drivers.
+Fields: driver_id, driver_name, contact_info, license_number, etc.
+Admin Model:
+
+Represents administrators who manage the system.
+Fields: admin_id, username, password, email, etc.
+Transaction Model:
+
+Records transactions between the application and payment gateways.
+Fields: transaction_id, payment_id, transaction_date, amount, transaction_status, etc.
+Promotion Model:
+
+Stores details of promotional offers or discounts.
+Fields: promotion_id, promo_code, discount_amount, start_date, end_date, description, etc.
+City Model:
+
+Contains a list of cities served by the bus service.
+Fields: city_id, city_name, country, population, etc.
